@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>博客 - 文章</title>
+        <link rel="icon" href="./favicon.ico">
+
+        <script src="./info.js"></script>
+        <script src="./blog_assis.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.6.0/languages/python.min.js"></script>
+        <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.6.0/styles/xcode.min.css" rel="stylesheet">
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <span id="title">博客</span> | <span><a href="./">主页</a></span> | <span><a href="./topic.html">文章</a></span>
+        <hr width="100%" align="left">
+        <div id="main"></div>
+        
+        <script>
+document.title = blog_title + " - 文章";
+document.getElementById("title").innerHTML = blog_title;
+        </script>
+        <script src="./blog_main.js"></script>
+    </body>
+</html>
